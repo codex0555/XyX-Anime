@@ -1,0 +1,210 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+3:wght@200;400;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+/* Custom CSS to control column layout on different screen sizes */
+@media (max-width: 767px) {
+    .col-sm-6 {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4 {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.33%;
+                flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.card img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    top: -3.9%;
+}
+
+.card {
+    position: relative;
+    max-width: 250px; /* Adjust the max width as needed */
+    height: 14.4rem;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.play {
+    position: absolute;
+    top: 4.5rem;
+    left: 5.5rem;  /* updated need */
+    font-size: 40px;
+    display: none;
+}
+
+.card:hover .play {
+    display: block;
+    color: #007BFF;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    top: 15rem;
+    width: 11.5rem;
+    height: 2rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subordub {
+    background-color: white;
+    border-radius: 0px 4px;
+    padding: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
+    top: 12.69rem;
+    left: 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ep {
+    background-color: #007BFF;
+    border-radius: 4px 0px;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: right;
+    position: absolute;
+    top: 12.69rem;
+    right: 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ep1 {
+    background-color: red;
+    border-radius: 4px 0px;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: right;
+    position: absolute;
+    top: 12.69rem;
+    right: 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+    .subordub,
+    .ep {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:396px) {
+    .play{
+        left: 4rem;
+    }
+
+    .title{
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width:577px) {
+    .subordub{
+        top: 12.9rem; 
+    }
+
+    .ep{
+        top: 12.9rem;
+    }
+
+    .ep1{
+        top: 12.7rem;
+    }
+}
+
+
+.top-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.top-part > span > i {
+    margin-right: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.top-part > span:active {
+    background-color: rgb(28, 27, 27);
+    border-radius: 150px;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.spinning {
+    position: absolute!important;
+    top: 6rem;
+    left: 40%;
+    text-align: center;
+}

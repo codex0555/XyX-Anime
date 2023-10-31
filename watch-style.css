@@ -1,0 +1,335 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust this as needed) */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .iframe-container iframe {
+        width: 100%; /* Set the iframe width to 100% on smaller screens */
+        left: 0; /* Reset left positioning */
+        margin: 0; /* Remove margin */
+        padding: 0; /* Remove padding */
+        border: none; /* Remove border if any */
+    }
+
+    .bg-video{
+        height: 100rem;
+    }
+}
+
+
+.provider-section {
+    background-color: #292b2c;
+    padding: 10px; /* Add padding to create space inside the section */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Use flexbox for layout control */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Center the buttons horizontally */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Center the buttons vertically */
+  }
+
+  .provider-button {
+    display: inline-block; /* Display buttons in a line */
+    margin: 5px; /* Add some margin to separate the buttons */
+    padding: 10px 20px; /* Add padding to the buttons for better click targets */
+    background-color: #007bff; /* Background color for the buttons */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+    border-radius: 5px; /* Rounded corners */
+    position: relative;
+  }
+
+  .provider-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+ 
+
+  .episode{
+    opacity: 0.5;
+  }
+.episode-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap as needed */
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; /* To make them start from the left */
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    height: 10rem;
+    position: relative;
+}
+
+.episode-link {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    position: relative;
+    height: 2.5rem;
+}
+
+.episode-link:hover {
+    background-color: #0056b3;
+}
+
+.info{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.episode{
+    font-size: 20px !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-detail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.synopsis{
+    row-gap: 1rem;
+    height: 10rem;
+    font-size: 14px;
+    opacity: .9;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #007BFF #f4f4f4; /* Color of the thumb and track */
+    margin-left: 2rem;
+    position: relative;
+    
+}
+
+/* Change the color of the scrollbar and thumb in Webkit browsers (Chrome, Safari) */
+.synopsis::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+}
+
+.synopsis::-webkit-scrollbar-thumb {
+    background-color: #007BFF; /* Color of the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Change the color of the scrollbar and thumb in Firefox */
+
+
+.image{
+    display: block;
+    /* width: 200px; */
+}
+
+.anime_name{
+    /* width: 20rem!important; */
+    background-color: transparent;
+    /* width: 10rem; */
+}
+
+.anime_type{
+    position: relative;
+    /* float: inline-end; */
+    /* text-align: center; */
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.anime_status{
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.anime_quality{
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.blur_image{
+    background-repeat: no-repeat!important;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+}
+
+.bg-video {
+    -webkit-filter: blur(8px);
+            filter: blur(8px); /* Add the blur effect here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    height: 100rem;
+}
+
+.spinning{
+    position: relative!important;
+    top: 15rem;
+    left: 50%;
+    text-align: center;
+}
+
+.p-4.width{
+    position: relative;
+    left: -10rem;
+}
+
+.episode_changing > a{
+    text-decoration: none;
+    color: white;
+    width: 4rem;
+    background-color: green;
+    padding: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.episode_changing{
+    cursor: pointer;
+    position: relative;
+}
+
+.episode-nxt:hover{
+    background-color: rgb(10, 105, 10);
+}
+
+@media screen and (min-width:746px) {
+    .image{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:736px) {
+    .image{
+        width: 55rem;
+    }
+
+    .bg-video{
+        height: 80rem;
+    }
+
+    .info{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:472px) {
+    .spinning{
+        top: 10rem;
+    }
+}
+
+@media screen and (max-width:327px) {
+    .spinning{
+        top: 5rem;
+    }
+}
+
+@media screen and (max-width:549px) {
+    .anime_name , .anime_type, .anime_status, .anime_quality{
+        font-size: 14px;
+    }
+
+    /* .width{
+        position: relative;
+        left: -9rem;
+        right: 1rem;
+    } */
+}
+
+@media screen and (max-width:410px) {
+    /* .synopsis{
+        position: relative;
+        left: -2rem;
+    } */
+
+    .anime_name{
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .synopsis{
+        position: relative;
+        left: -2rem;
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .synopsis{width: 12rem;
+        position: relative;
+
+    }
+}
+
+@media screen and (max-width:374px) {
+    .synopsis{
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width:342px) {
+    .synopsis{
+        width: 7rem;
+    }
+}
+
+
+
+
+
+
+/* .bg-video{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    opacity: .2;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(20px);
+} */

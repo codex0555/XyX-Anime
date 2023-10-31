@@ -1,0 +1,109 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgb(18, 17, 17);
+    width: 105vw;
+    height: 4rem;
+    position: relative;
+    left: -1.5rem;
+}
+
+.container-fluid {
+    margin-left: 0rem;
+}
+
+form {
+    position: relative;
+    right: 4rem;
+    left: auto;
+    margin-top: 0.9rem;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search {
+    width: 20rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 0.9rem;
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s; /* Add transition for smoother width change */
+}
+
+.bar button {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    right: 4.4rem;
+    background-color: transparent;
+    border-radius: 4rem;
+    color: white;
+}
+
+button > i {
+    font-size: 20px;
+}
+
+.logo > a > img {
+    top: 0.5rem;
+    position: relative;
+    left: 4rem;
+}
+
+.search:hover {
+    outline: none;
+    -webkit-box-shadow: 0 0 2px #007bff, 0 0 10px #007bff, 0 0 4px #007bff, 0 0 3px #007bff;
+            box-shadow: 0 0 2px #007bff, 0 0 10px #007bff, 0 0 4px #007bff, 0 0 3px #007bff;
+}
+
+@media screen and (max-width: 993px) {
+    .search {
+        width: 15rem; /* Reduce the width of the search bar for smaller screens */
+    }
+    
+    #search-toggle {
+        /* Adjust styles for smaller screens if needed */
+    }
+    
+    .header {
+        /* Adjust styles for the header if needed */
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .search {
+        width: 10rem; /* Further reduce the width of the search bar for even smaller screens */
+        left: 5rem;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .search{
+        left: 6rem;
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .logo > a > img{
+        left: 2rem;
+    }
+}

@@ -1,0 +1,18 @@
+/* For Webkit browsers (Chrome, Safari) */
+/* You can adjust the colors to your preference */
+::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff; /* Set the color of the thumb (the draggable part) */
+    border-radius: 3px; /* Round the corners of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Change color on hover */
+}
