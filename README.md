@@ -9,3 +9,16 @@ ___
 ![Screenshot](https://github.com/codex0555/XyX-Anime/blob/main/preview3.png)
 ![Screenshot](https://github.com/codex0555/XyX-Anime/blob/main/preview4.png)
 ***
+## Anime Genres
+
+| Genre         | Description                                      |
+|---------------|--------------------------------------------------|
+| Action        | Anime involving fighting, feats, or battles.     |
+| Adventure     | Anime with exciting and unusual experiences.      |
+| Comedy        | Anime meant to make the audience laugh.           |
+| Drama         | Anime focused on realistic characters and plot.  |
+| Fantasy       | Anime based in an imaginary world.                |
+| Mystery       | Anime with elements of suspense or mystery.       |
+| Sci-Fi        | Anime based on scientific or technological themes.|
+| ...           | ...                                              |
+
