@@ -74,6 +74,11 @@ body {
             justify-content: space-between;
 }
 
+main.main_all {
+    top: -4rem;
+    position: relative;
+}
+
 .play {
     position: absolute;
     top: 4.5rem;
@@ -82,15 +87,25 @@ body {
     display: none;
 }
 
+.card{
+    overflow: hidden;
+}
+
 .card:hover .play {
     display: block;
     color: #007BFF;
 }
 
+.card:hover img{
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+
 .title {
-    position: absolute;
+    position: relative;
     color: white;
-    top: 15rem;
+    top: 0.5rem;
     width: 11.5rem;
     height: 2rem;
     text-transform: capitalize;
