@@ -1,13 +1,30 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .box-footer .outro{
     height: 5rem;
     background-color: #121111;
 }
 
-.outro >img{
-    position: relative;
+/* .call img{
+    position: absolute;
     float: right;
-    max-width: 150px;
-    min-width: 100px;
+    width: 70px;
+} */
+
+img.img-fluid.call {
+    width: 10rem;
+    top: 4.99rem;
+    position: relative;
+}
+
+.join_us {
+    left: 7.9rem;
+    position: relative;
 }
 
 .join_us > a{
@@ -32,6 +49,7 @@
     padding: 6px;
     position: relative;
     left: 1rem;
+    top: 0.5rem;
 }
 
 .container-fluid.footer_outer {
@@ -40,7 +58,7 @@
 }
 
 #faceb{
-    background-color: #3b5998;
+    background-color: #0088cc;
 }
 
 #insta{
@@ -69,10 +87,11 @@ span > hr{
 }
 
 .brand{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: 'Poppins', sans-serif;
     position: relative;
     left: 1rem;
     
 }
-
